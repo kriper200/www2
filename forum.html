@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <title>Медитация: Познай себя</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "login.css">
+</head>
+<body>
+<header>
+    <div class = "hat">
+        <div class = "logo">
+            <img src = "images/LOGO SVG.svg" width="60" height="60"> 
+            <i> Медитация - Путь жизни </i>
+        </div>
+        <div class = "font-select">
+          <select id = "selected-font">
+            <option value = "Основной">Merriweather</option>
+            <option value = "Обычный 1">Times New Roman</option>
+            <option value = "Обычный 2">Impact</option>
+            <option value = "Обычный 3">Franklin Gothic Medium</option>
+          </select>
+        </div>
+        <input id = "burger-toggle" type = checkbox>
+        <label for = "burger-toggle" class="label-burger">
+            <span></span>
+        </label>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" id="gotomain">На главную</a></li>
+                <li><a href="forum.html" target="_blank" id="forum">Запись</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+</header>
+    <main>
+        <div class = "gridreg">
+            <div class = "gridname">
+                <label for = "naming">Введите ваше имя</label>
+                <input type = "text" id = "naming">
+            </div>
+
+            <div class = "griddate">
+                <label for = "dating">Выберите дату</label>
+                <input type = "date" id = "dating">
+            </div>
+
+            <div class = "gridtrain">
+                <label for = "training">Выберите тренера</label>
+                <select id = "training">
+                        <option label="Не выбран" value="1" selected disabled></option>
+                        <option>Панин Никита Сергеевич</option>
+                        <option >Горнюв Артем Андреевич</option>
+                        <option>Любимов Матвей</option>
+                        <option>Ситдиков Алексей Альбертович</option>
+                        <option>Сазанов Кабир Александрович</option>
+                        
+                    </select>
+            </div>
+
+            <div class="gridnumber">
+                <label for = "telephone">Введите ваш номер телефона</label>
+                <input type = "tel" inputmode="numeric" id = "telephone" maxlength="12"> 
+            </div>
+
+            <div class = "gridsubmit">
+                <button type = "button" id = "submit">Записаться</button>
+            </div>
+        </div>
+    </main>
+<footer class = "foot">
+  <div class = "list">
+    <h3>Данный веб-сайт разработан учеником группы ИКБО-24-24 Тимофеевым Ильей Александровичем для курсовой работы</h3>
+  </div>
+    <div class = "social-media">
+          <div class = "tik-tok"><img src="images/tik-tok.png" width="50" height="50"></div>
+          <div  class = "whatsapp"><img src="images/whatsapp.png" width="50" height="50"></div>
+          <div class = "instagram"><img src="images/instagram.png" width="50" height="50"></div>
+    </div>
+  <div class="agents">
+    <h3>Техники медитаций</h3>
+    <ul>
+      <a href = ""><li>Медитация осознания дыхания</li></a>
+      <a href = ""><li>Медитация с помощью мантры</li></a>
+      <a href = ""><li>Управляемая медитация</li></a>
+      <a href = ""><li>Базовая медитация</li></a>
+      <a href = ""><li>Медитация осознанной ходьбы</li></a>
+    </ul>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>

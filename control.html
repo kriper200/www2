@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мантра-медитация | Медитация — Путь жизни</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="guide.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header>
+    <div class = "hat">
+        <div class = "logo">
+            <img src = "images/LOGO SVG.svg" width="60" height="60"> 
+            <i> Медитация - Путь жизни </i>
+        </div>
+        <div class = "font-select">
+          <select id = "selected-font">
+            <option value = "Основной">Merriweather</option>
+            <option value = "Обычный 1">Times New Roman</option>
+            <option value = "Обычный 2">Impact</option>
+            <option value = "Обычный 3">Franklin Gothic Medium</option>
+          </select>
+        </div>
+        <input id = "burger-toggle" type = checkbox>
+        <label for = "burger-toggle" class="label-burger">
+            <span></span>
+        </label>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html" id="gotomain">На главную</a></li>
+                <li><a href="forum.html" target="_blank" id="forum">Запись</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+</header>
+<main class="main">
+    <div class = "nameof">
+        <p>Управляемая медитация</p>
+    </div>
+  <div class="step stepOne">
+    <div class="stepHeader">
+      <h1>1</h1>
+      <div class="blur-circle"></div>
+    </div>
+    <div class="stepContent">
+      <h2>Найдите аудиогид</h2>
+      <p>Это может быть запись из приложения, видео на YouTube или аудиофайл от вашего учителя. Убедитесь, что звук спокойный и без резких переходов.</p>
+    </div>
+  </div>
+
+
+  <div class="step stepTwo">
+    <div class="stepHeader2">
+      <h1>2</h1>
+      <div class="blur-circle"></div>
+    </div>
+    <div class="stepContent">
+      <h2>Подготовьте пространство</h2>
+      <p>Уберите отвлекающие предметы, отключите уведомления. Используйте наушники для лучшего погружения.</p>
+    </div>
+  </div>
+
+  <div class="step stepOne">
+    <div class="stepHeader">
+      <h1>3</h1>
+      <div class="blur-circle"></div>
+    </div>
+    <div class="stepContent">
+      <h2>Следуйте инструкциям</h2>
+      <p>Не пытайтесь «делать всё правильно». Просто слушайте и выполняйте указания: расслабляйте тело, следите за дыханием, представляйте образы.</p>
+    </div>
+  </div>
+
+  <div class="step stepTwo">
+    <div class="stepHeader2">
+      <h1>4</h1>
+      <div class="blur-circle"></div>
+    </div>
+    <div class="stepContent">
+      <h2>Останьтесь в тишине после окончания</h2>
+      <p>После завершения аудио посидите 1–2 минуты в тишине. Почувствуйте, как вы себя ощущаете «здесь и сейчас».</p>
+    </div>
+  </div>
+    <div class = "audio-player">
+    <audio src = "audio/control.mp3" id = "audio" preload="metadata"></audio>
+    <div class="name">
+        <p>Аудиогид: Пример</p>
+    </div>
+    <span id="timer">0:00 / 0:00</span>
+    <div class = "buttons">
+        <a class = "button-play" id = "play" title = ""><img src = "images/play.svg" id = "playimg"></a>
+        <input type = "range" id = "seek" value = "0" max = "">
+        <div>
+          <a class = "button-volume" id = "volume" title = ""><img src = "images/volume-max.png" id = "volumeimg"></a>
+          <div><input type = "range" id = "volume-range" max = "1" step = "0.1" min = "0"></div>
+        </div>
+    </div>
+
+    
+  </div>
+</main>
+
+<footer class = "foot">
+  <div class = "list">
+    <h3>Данный веб-сайт разработан учеником группы ИКБО-24-24 Тимофеевым Ильей Александровичем для курсовой работы</h3>
+  </div>
+    <div class = "social-media">
+          <div class = "tik-tok"><img src="images/tik-tok.png" width="50" height="50"></div>
+          <div  class = "whatsapp"><img src="images/whatsapp.png" width="50" height="50"></div>
+          <div class = "instagram"><img src="images/instagram.png" width="50" height="50"></div>
+    </div>
+  <div class="agents">
+    <h3>Техники медитаций</h3>
+    <ul>
+      <a href = ""><li>Медитация осознания дыхания</li></a>
+      <a href = ""><li>Медитация с помощью мантры</li></a>
+      <a href = ""><li>Управляемая медитация</li></a>
+      <a href = ""><li>Базовая медитация</li></a>
+      <a href = ""><li>Медитация осознанной ходьбы</li></a>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

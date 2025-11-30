@@ -1,0 +1,142 @@
+
+
+.gridreg {
+    width: auto;
+    height: auto; 
+    min-height: 400px; 
+    gap: 1.5em; 
+    background: linear-gradient(135deg, 
+  rgba(100, 179, 214, 0.2),   
+  rgba(58, 124, 140, 0.3),    
+  rgba(30, 74, 87, 0.4)       
+);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto; 
+    padding: 30px;
+    box-sizing: border-box; 
+    justify-self: center;
+    color: white; 
+}
+
+
+.gridname,
+.griddate,
+.gridtrain,
+.gridnumber {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+
+.gridname label,
+.griddate label,
+.gridtrain label,
+.gridnumber label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+#naming, #telephone, #dating {
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); 
+    background-color: transparent; 
+    width: auto; 
+    height: 2rem;
+    color: white; 
+    font-size: 1rem;
+    padding: 0 0 5px 0; 
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+#naming:focus, #telephone:focus {
+    border-bottom: 2px solid white; 
+    width: 100%; 
+}
+
+#training {
+    width: fit-content;
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#training:focus {
+    outline: none;
+    width: 100%;
+    transition: all 0.5s ease;
+    border-color: white; 
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+
+select option {
+    background-color: #114139; 
+    color: white;
+}
+
+
+#dating:focus{
+    border-bottom: 2px solid white;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.gridsubmit {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+
+#submit{
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+#submit:hover{
+    transition: all 0.4s ease;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.2); 
+
+}
+
+
+
+@media (max-width: 712px) {
+    .gridreg {
+        width: 90%; 
+        height: auto;
+        min-height: 600px; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto; 
+        padding: 20px;
+
+    }
+
+    .gridsubmit{
+        grid-column-end: 1;
+        justify-self: flex-start;
+    }
+
+    #naming, #dating {
+        width: 100%;
+    }
+}

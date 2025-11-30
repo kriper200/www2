@@ -1,0 +1,149 @@
+.pictures {
+    margin-top: 15px;
+    display: grid;
+    justify-self: center;
+    grid-auto-rows: 300px;
+    grid-auto-columns: 300px;
+    gap: 1em;
+
+    grid-template-areas: "img1 img2 img2 img3"
+                         "img1 img4 img5 img5"
+                         "img6 img6 img6 img6";
+}
+
+.photo{
+    position: relative;
+}
+.photos{
+    width: 100%;
+    height: 100%;
+}
+p {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: BLUE;
+    z-index: 5;
+    font-size: 48px;
+    transform: translateX(-1000px);
+}
+
+.photo img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.photo:nth-child(1)::after{
+    opacity: 0;
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    background-color: red;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo:nth-child(1):hover::after{
+    opacity: 0.7;
+    transition: all 0.7s ease;
+    
+}
+
+.photo:nth-child(1):hover p{
+    transform: translateX(0);
+    transition: all 0.7s ease;
+    
+}
+
+.photo:nth-child(2)::after{
+    opacity: 0;
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    background-color: green;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo:nth-child(2):hover::after{
+    opacity: 0.7;
+    transition: all 0.7s ease;
+    
+}
+
+
+
+.photo:nth-child(3)::after{
+    opacity: 0;
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    background-color: pink;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo:nth-child(3):hover::after{
+    opacity: 0.7;
+    transition: all 0.7s ease;
+    
+}
+
+
+
+.photo:nth-child(4)::after{
+    opacity: 0;
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    background-color: blue;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo:nth-child(4):hover::after{
+    opacity: 0.7;
+    transition: all 0.7s ease;
+    
+}
+
+.photo:nth-child(5)::after{
+    opacity: 0;
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    background-color: purple;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo:nth-child(5):hover::after{
+    opacity: 0.7;
+    transition: all 0.7s ease;
+    
+}
+
+
+.photo:nth-child(6)::after{
+    opacity: 0;
+    border-radius: 1rem;
+    content: "";
+    position: absolute;
+    background-color: black;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo:nth-child(6):hover::after{
+    opacity: 0.7;
+    transition: all 0.7s ease;
+    
+}
