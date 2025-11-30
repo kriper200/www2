@@ -22,7 +22,6 @@
 .stepContent{
     background-color: white;
     padding: 20px;
-    width: 50%;
     margin-top: 2rem;
     border-radius: 1rem;
     position: relative;
@@ -52,9 +51,8 @@
 
 .stepHeader h1 {
   z-index: 1;
-    color: #ffffff;
+  color: #ffffff;
   font-size: 2rem;
-  margin: 25px;
   text-align: center;
 }
 
@@ -95,7 +93,6 @@
 .stepHeader2 h1{
     z-index: 1;
     color: #ffffff;
-    margin: 25px;
   font-size: 2rem;
   text-align: center;
 }
@@ -166,11 +163,15 @@
 @media (max-width: 768px){
   .audio-player{
     width: 100%;
+    height: auto;
   }
 }
 
 
 @media (max-width: 1200px){
+  #volume-range{
+    right: 20px;
+  }
   .stepOne{
     transform: translateX(-10px);
   }

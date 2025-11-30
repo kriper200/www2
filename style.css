@@ -60,6 +60,7 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
+    padding: 0 20px;
     
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     overflow: visible;
@@ -474,6 +475,29 @@ body {
     }
 }
 @media (max-width: 784px){
+    .main{
+        margin: 2%;
+        margin-top: 4rem;
+        padding: 2%;
+    }
+    .font-select {
+        flex-grow: 0; 
+        flex-shrink: 1; 
+        max-width: 150px;
+        margin: 0 10px;
+    }
+    
+    #selected-font{
+        width: 100%;
+        max-width: 140px;
+        font-size: 0.85rem;
+        padding: 5px 8px;
+        box-sizing: border-box; 
+    }
+    .navigation {
+        width: 0;
+        overflow: hidden;
+    }
     .foot{
         grid-template-columns: 1fr;
     }
