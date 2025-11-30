@@ -130,13 +130,27 @@ select option {
         padding: 20px;
 
     }
-
-    .gridsubmit{
-        grid-column-end: 1;
-        justify-self: flex-start;
+    #naming, 
+    #dating,
+    #telephone, 
+    #training { 
+        width: 100%;
+        box-sizing: border-box; 
+    }
+    
+   
+    #telephone:focus {
+        width: 100%; 
     }
 
-    #naming, #dating {
+    
+    .gridsubmit{
+        grid-column-start: 1;
+        grid-column-end: 2; 
+        justify-self: stretch; 
+    }
+    
+    #submit {
         width: 100%;
     }
 }

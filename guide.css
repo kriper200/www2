@@ -10,7 +10,7 @@
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 200px;
-    gap: 10%;
+    gap: 50px;
     transform: translateX(-1000px);
     opacity: 0;
 }
@@ -32,7 +32,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 /* Заблюренный кружок НАД заголовком */
@@ -46,6 +46,9 @@
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
   position: absolute;
+   left: 50%;
+  transform: translateX(-50%); 
+  margin-left: 0;
   z-index: 0;
 }
 
@@ -65,7 +68,7 @@
     margin-bottom: 200px;
     opacity: 0;
     transform: translateX(1000px);
-    gap: 10%;
+    gap: 50px;
 }
 
 .stepTwo.active{
