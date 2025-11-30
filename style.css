@@ -374,7 +374,7 @@ body {
     flex-direction: column;
 }
 
-.agents li, .list p {
+.agents li{
     color: #70eac9;
     margin-bottom: 1rem;
     text-align:start;
@@ -382,9 +382,10 @@ body {
     font-size: 14px;
 }
 
-.list p {
+.list h3 {
     display: flex;
-    align-self: center;
+    text-align: center;
+    padding: 0 20px;
 }
 
 .instagram img{
