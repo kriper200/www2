@@ -1,149 +1,76 @@
-.pictures {
-    margin-top: 15px;
-    display: grid;
+.but {
+    align-self: center;
     justify-self: center;
-    grid-auto-rows: 300px;
-    grid-auto-columns: 300px;
-    gap: 1em;
-
-    grid-template-areas: "img1 img2 img2 img3"
-                         "img1 img4 img5 img5"
-                         "img6 img6 img6 img6";
 }
 
-.photo{
-    position: relative;
-}
-.photos{
-    width: 100%;
-    height: 100%;
-}
-p {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    color: BLUE;
-    z-index: 5;
-    font-size: 48px;
-    transform: translateX(-1000px);
-}
-
-.photo img{
-    border-radius: 1rem;
-    width: 100%;
-    height: 100%;
-}
-.photo:nth-child(1)::after{
-    opacity: 0;
-    border-radius: 1rem;
-    content: "";
-    position: absolute;
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 1em;
     background-color: red;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.photo:nth-child(1):hover::after{
-    opacity: 0.7;
-    transition: all 0.7s ease;
-    
-}
-
-.photo:nth-child(1):hover p{
-    transform: translateX(0);
-    transition: all 0.7s ease;
-    
-}
-
-.photo:nth-child(2)::after{
-    opacity: 0;
-    border-radius: 1rem;
-    content: "";
-    position: absolute;
-    background-color: green;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.photo:nth-child(2):hover::after{
-    opacity: 0.7;
-    transition: all 0.7s ease;
-    
 }
 
 
-
-.photo:nth-child(3)::after{
-    opacity: 0;
-    border-radius: 1rem;
-    content: "";
-    position: absolute;
-    background-color: pink;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.photo:nth-child(3):hover::after{
-    opacity: 0.7;
-    transition: all 0.7s ease;
-    
-}
-
-
-
-.photo:nth-child(4)::after{
-    opacity: 0;
-    border-radius: 1rem;
-    content: "";
-    position: absolute;
+button.active {
     background-color: blue;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+
+}
+.but {
+    /* ... стили контейнера ... */
 }
 
-.photo:nth-child(4):hover::after{
-    opacity: 0.7;
-    transition: all 0.7s ease;
-    
+/* Стили для Кнопки 1: Цвет */
+
+/* Стили для Кнопки 2: След */
+.active-trail-button {
+    background-color: green !important; /* Индикация, что след включен */
 }
 
-.photo:nth-child(5)::after{
-    opacity: 0;
-    border-radius: 1rem;
-    content: "";
-    position: absolute;
-    background-color: purple;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+.bady{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-.photo:nth-child(5):hover::after{
-    opacity: 0.7;
-    transition: all 0.7s ease;
-    
+/* Стили для элемента следа */
+.trail-element {
+    position: absolute; 
+    width: 10px;
+    height: 10px;
+    background-color: rgba(33, 50, 62, 0.8); 
+    border-radius: 50%;
+    pointer-events: none; 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+    z-index: 9999; 
+    opacity: 1;
 }
 
 
-.photo:nth-child(6)::after{
-    opacity: 0;
-    border-radius: 1rem;
-    content: "";
-    position: absolute;
-    background-color: black;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+.cart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.photo:nth-child(6):hover::after{
-    opacity: 0.7;
-    transition: all 0.7s ease;
-    
+
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: aqua;
+    width: inherit;
+    height: 200px;
+    border-radius: 1em;
+}
+
+.solve {
+    background-color: blue;
+    font-size: 24px;
 }

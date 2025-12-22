@@ -12,29 +12,47 @@
     <link rel = "stylesheet" href = "test.css">
 </head>
 
-<body>
-    <div class = "pictures">
-        <div class ="photo" style = "grid-area: img1;">
-            <div class = "photos"><img src = "images/photo7.jpg"></div>
-            <div>
-                <p>БРАТИШКА the next</p>
-            </div>
+<body class = "bady">
+    <div class ="but">
+        <button id = "butt">Клик</button>
+        <button id = "trailToggle">Включить след</button>
+    </div>
+
+    <div class = "cart">
+        <div class = "product" data-name="Продукт1" data-price="100">
+            <P>продукт 1</P>
+            <p>100 изумрудов</p>
+            <button class = "add">Добавить</button>
         </div>
-        <div class ="photo" style = "grid-area: img2;">
-            <img src = "images/photo2.jpg">
+
+        <div class = "product" data-name="Продукт2" data-price="200">
+            <p>продукт2</p>
+            <p>200 rubles</p>
+            <button class = "add">Добавить</button>
         </div>
-        <div class ="photo" style = "grid-area: img3;">
-            <img src = "images/photo3.jpg">
-        </div>
-        <div class ="photo" style = "grid-area: img4;">
-            <img src = "images/photo4.jpg">
-        </div>
-        <div class ="photo" style = "grid-area: img5;">
-            <img src = "images/photo5.jpg">
-        </div>
-        <div class ="photo" style = "grid-area: img6;">
-            <img src = "images/photo6.jpg">
+
+        <div class = "product" data-name="Продукт3" data-price="300">
+            <p>продукт 3</p>
+            <p>300Р</p>
+            <button class = "add">Добавить</button>
         </div>
     </div>
+
+    <div class = "product-list">
+        <span class = "products">Ваши товары</span>
+        <div class="listbg">
+
+        </div>
+
+        <span class = "sum">Общая сумма: 0</span>
+    </div>
+    <div class="capha">
+        <div class = "capha-box">
+            <span class = "solve">sss</span>
+            <input type="text" id = "pass">
+            <button id = "submit">Отправить</button>
+        </div>
+    </div>
+<script src="test.js"></script>
 </body>
 </html>

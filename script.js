@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+//   function truncate(str, maxlength) {
+//         if (str.length <= maxlength) return str;
+//         return str.slice(0, maxlength - 1) + '…';
+// }
+
+// document.querySelectorAll('.description > p')
+//         .forEach(el => {
+//             el.textContent = truncate(el.textContent, 15);
+
+
+  // let age = prompt('сколька тебе лет');
+  // let result = confirm('hey');
+
 
   var audio = document.getElementById("audio");
   if (audio){
@@ -7,13 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // работа с громкостью
+    //получение элементов для работы с громкостью по id
     var volumeLink = document.getElementById("volume");
     var volumeRange = document.getElementById("volume-range");
     var img2 = document.getElementById("volumeimg");
 
-    function setVolume(){
-      audio.volume = volumeRange.value;
-
+    function setVolume(){ // установка громкости
+      audio.volume = volumeRange.value; // значение громкости равно значению ползунка
+      // изменение изображения
       if (audio.volume == 0){
         img2.src = "images/volume-muted.png";
       }
@@ -25,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    function showVolume(){
+    function showVolume(){ // функция, которая показывает ползунок
       if (volumeRange.style.opacity == "0"){
         volumeRange.style.opacity = "1";
         volumeRange.style.pointerEvents = "auto";
@@ -35,9 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
         volumeRange.style.pointerEvents = "none";
       }
     }
-    
-    volumeLink.addEventListener('click', showVolume);
-    volumeRange.addEventListener('input', setVolume);
+
+    volumeLink.addEventListener('click', showVolume); // показать ползунок при нажатии на картинку
+    volumeRange.addEventListener('input', setVolume); // присваивание значение ползунка значению громкости
 
 
     // Установка таймера
@@ -73,24 +87,24 @@ document.addEventListener('DOMContentLoaded', () => {
     playLink.addEventListener("click", playAudio);
 
     // работа с ползунком
-    var seek = document.getElementById("seek");
+    var seek = document.getElementById("seek"); // получение ползунка
 
     function getMaxValue(){
-        seek.max = audio.duration;
+        seek.max = audio.duration; // установка максимального значения
     }
 
     function update(){
-      seek.value = audio.currentTime;
+      seek.value = audio.currentTime; // обновление времени
     }
 
     function set(){
-      audio.currentTime = seek.value;
+      audio.currentTime = seek.value; // установка значению времени аудио значение ползунка
     }
 
-    audio.addEventListener("loadedmetadata", getMaxValue);
-    audio.addEventListener("timeupdate", update);
-    seek.addEventListener("input", set);
-  }
+    audio.addEventListener("loadedmetadata", getMaxValue); // получение значения максимального времени
+    audio.addEventListener("timeupdate", update); // срабатывания функции Update каждое обновление времени
+    seek.addEventListener("input", set); // установка значения по ползунку
+    }
   const steps = document.querySelectorAll('.stepOne, .stepTwo');
 
   if (steps.length === 0) return;
@@ -115,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
   steps.forEach(step => {
     observer.observe(step);
   });
-});
+  });
 
 document.addEventListener('DOMContentLoaded', () => {
   var selectedFont = document.getElementById("selected-font");  // получение элемента выбора шрифта
@@ -170,5 +184,4 @@ function sendMessage(){ // функция отправки сообщения п
   }
 
 submit.addEventListener('click', sendMessage); // добавление функции отправки сообщения при нажатии на кнопку "Записаться"
-
 
